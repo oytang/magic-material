@@ -9,7 +9,7 @@ Generally, we provided an array of solutions for various tasks in the scope of M
 - **Property prediction** - Given the composition of a certain material, predict the corresponding property.
     - We illustrated our solutions with a wide range of data-driven models, including **classical machine learning models** (such as random forest and gradient boost) and latest **deep learning models** (such as Transformer and TabNet).
     - In addition, we constructed **stacking models** combining the above two kinds of models, to exploit the advantages of both models to greater extent.
-    - We **handled missing values by estimation** of them using the mean of that value in the rest of the dataset. The largest advantage of this apporoach is that we can directly translate developed pipeline from complete dataset to incomplete dataset. The obvious disadvantage is that incorrect estimation can bring large bias to the model.
+    - We **handled missing values by** !!!!!!!!TODO!!!!!!!!!
 
 - **Inverse design** - Given a set of desired properties, predict the composition of a certain material (usually, in a limited material design space, such as the 12-element space in this toy alloy data example), that has the cloest set of properties to the desire one.
     - We approched initially with **direct inverse modeling**, assuming an one-to-one mapping between compositions and properties, which is not necessarily true physically.
