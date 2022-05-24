@@ -20,7 +20,7 @@ from lightgbm import log_evaluation
 import json
 # def prepare_data():
 
-# 	df_1 = pd.read_csv('data/data_fe_2.csv')
+# 	df_1 = pd.read_csv('../data/preprocessed/data_fe_2.csv')
 # 	X, Y = df_1.iloc[:,:-6], df_1.iloc[:, -6:]
 	
 # 	X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=4)
@@ -139,7 +139,7 @@ if __name__ =="__main__":
 	for i in range(6):
 
 
-		df_1 = pd.read_csv('data/data_fillna_property'+str(i+1)+'.csv')
+		df_1 = pd.read_csv('../data/preprocessed/data_fillna_property'+str(i+1)+'.csv')
 		X, Y = df_1.iloc[:,:-1], df_1.iloc[:, -1]
 	
 		X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=4)
@@ -150,7 +150,7 @@ if __name__ =="__main__":
 		best_model_lgb = LGBMRegressor(**best_params_lgb)
 		df_results_lgb = cv_train_test_model(best_model_lgb, X_train, Y_train, X_test, Y_test, cv, scoring[0])
 		df_results_lgb = df_results_lgb.add_suffix('_lgb').set_axis([Y_train.name], axis=0)
-		#df_results_lgb.to_csv(data/str(i)+'_lgb_results.csv', index=False)
+		#df_results_lgb.to_csv(str(i)+'_lgb_results.csv', index=False)
 
 
 		#xgb
@@ -163,14 +163,14 @@ if __name__ =="__main__":
 		best_model_xgb = XGBRegressor(**best_params_xgb)  
 		df_results_xgb = cv_train_test_model(best_model_xgb, X_train, Y_train, X_test, Y_test, cv, scoring[0])
 		df_results_xgb = df_results_xgb.add_suffix('_xgb').set_axis([Y_train.name], axis=0)
-		#df_results_xgb.to_csv(data/str(i)+'_xgb_results.csv', index=False)
+		#df_results_xgb.to_csv(str(i)+'_xgb_results.csv', index=False)
 
 		#rf
 		best_params_rf = objective_rf(X_train, Y_train)
 		best_model_rf = RandomForestRegressor(**best_params_rf)
 		df_results_rf = cv_train_test_model(best_model_rf, X_train, Y_train, X_test, Y_test, cv, scoring[0])
 		df_results_rf = df_results_rf.add_suffix('_rf').set_axis([Y_train.name], axis=0)
-		#df_results_rf.to_csv(data/str(i)+'_rf_results.csv', index=False)
+		#df_results_rf.to_csv(str(i)+'_rf_results.csv', index=False)
 
 		df_results_all_model = pd.concat([df_results_lgb, df_results_xgb, df_results_rf], axis=1)
 
@@ -180,7 +180,7 @@ if __name__ =="__main__":
 
 
 	df_results_all_property = pd.concat(df_results_all_model_list, axis=0)
-	df_results_all_property.to_csv('data/df_results_fill.csv', index=False)
+	df_results_all_property.to_csv('df_results_fill.csv', index=False)
 
 
 
