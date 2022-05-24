@@ -1,0 +1,174 @@
+tree
+version=v3
+num_class=1
+num_tree_per_iteration=1
+label_index=0
+max_feature_idx=144
+objective=regression
+feature_names=element_1 element_2 element_3 element_4 element_5 element_6 element_7 element_8 element_9 element_10 element_11 element_12 mixing_entropy element_1_element_2 element_1_element_3 element_1_element_4 element_1_element_5 element_1_element_6 element_1_element_7 element_1_element_8 element_1_element_9 element_1_element_10 element_1_element_11 element_1_element_12 element_2_element_3 element_2_element_4 element_2_element_5 element_2_element_6 element_2_element_7 element_2_element_8 element_2_element_9 element_2_element_10 element_2_element_11 element_2_element_12 element_3_element_4 element_3_element_5 element_3_element_6 element_3_element_7 element_3_element_8 element_3_element_9 element_3_element_10 element_3_element_11 element_3_element_12 element_4_element_5 element_4_element_6 element_4_element_7 element_4_element_8 element_4_element_9 element_4_element_10 element_4_element_11 element_4_element_12 element_5_element_6 element_5_element_7 element_5_element_8 element_5_element_9 element_5_element_10 element_5_element_11 element_5_element_12 element_6_element_7 element_6_element_8 element_6_element_9 element_6_element_10 element_6_element_11 element_6_element_12 element_7_element_8 element_7_element_9 element_7_element_10 element_7_element_11 element_7_element_12 element_8_element_9 element_8_element_10 element_8_element_11 element_8_element_12 element_9_element_10 element_9_element_11 element_9_element_12 element_10_element_11 element_10_element_12 element_11_element_12 phs_element_1_element_2 phs_element_1_element_3 phs_element_1_element_4 phs_element_1_element_5 phs_element_1_element_6 phs_element_1_element_7 phs_element_1_element_8 phs_element_1_element_9 phs_element_1_element_10 phs_element_1_element_11 phs_element_1_element_12 phs_element_2_element_3 phs_element_2_element_4 phs_element_2_element_5 phs_element_2_element_6 phs_element_2_element_7 phs_element_2_element_8 phs_element_2_element_9 phs_element_2_element_10 phs_element_2_element_11 phs_element_2_element_12 phs_element_3_element_4 phs_element_3_element_5 phs_element_3_element_6 phs_element_3_element_7 phs_element_3_element_8 phs_element_3_element_9 phs_element_3_element_10 phs_element_3_element_11 phs_element_3_element_12 phs_element_4_element_5 phs_element_4_element_6 phs_element_4_element_7 phs_element_4_element_8 phs_element_4_element_9 phs_element_4_element_10 phs_element_4_element_11 phs_element_4_element_12 phs_element_5_element_6 phs_element_5_element_7 phs_element_5_element_8 phs_element_5_element_9 phs_element_5_element_10 phs_element_5_element_11 phs_element_5_element_12 phs_element_6_element_7 phs_element_6_element_8 phs_element_6_element_9 phs_element_6_element_10 phs_element_6_element_11 phs_element_6_element_12 phs_element_7_element_8 phs_element_7_element_9 phs_element_7_element_10 phs_element_7_element_11 phs_element_7_element_12 phs_element_8_element_9 phs_element_8_element_10 phs_element_8_element_11 phs_element_8_element_12 phs_element_9_element_10 phs_element_9_element_11 phs_element_9_element_12 phs_element_10_element_11 phs_element_10_element_12 phs_element_11_element_12
+feature_infos=[-1:0.99935042222555337] [-1:0.3449227373068432] [-1:0.1977644024075666] [-1:0.80804099329917234] [-1:0.12881679389312969] [-1:0.99997500062498434] [-1:0.015724918754586401] [-1:0.037486435829140699] [-1:0.0060850028084628001] [-1:0.99491930663478778] [-1:0.014677103718199601] [-1:0.99591674136042241] [-1.2653916817585864:0] [-0.99084030266825962:1] [-0.98765432098765438:1] [-0.99183592194344883:1] [-0.99084030266825962:1] [-0.99997500062498434:1] [-0.99935042222555337:1] [-0.99183592194344883:1] [-0.99183592194344883:1] [-0.99183592194344883:1] [-0.99024681528662417:1] [-0.98765432098765438:1] [-0.2607319117236242:1] [-0.74833467189493086:1] [-0.3449227373068432:1] [-0.99995000199992001:1] [-0.3008876184744998:1] [-0.30194756177343868:1] [-0.28853089685020439:1] [-0.95355731225296436:1] [-0.29861145672622302:1] [-0.9799019607843138:1] [-0.53392874478205998:1] [-0.15107166462090449:1] [-0.99959949937421755:1] [-0.064114306649569505:1] [-0.15107166462090449:1] [-0.0828881930373917:1] [-0.40038498556304131:1] [-0.1295336787564767:1] [-0.98513379583746274:1] [-0.80804099329917234:1] [-0.99969915764139605:1] [-0.74833467189493086:1] [-0.73102755060081326:1] [-0.71189279731993305:1] [-0.73102755060081326:1] [-0.73639033205330928:1] [-0.9799019607843138:1] [-0.99997500062498434:1] [-0.11235955056179769:1] [-0.123574144486692:1] [-0.12851023322227509:1] [-0.26055488540410138:1] [-0.1051625239005736:1] [-0.98423995932892738:1] [-0.97502448579823719:1] [-0.99995000199992001:1] [-0.99987001039916801:1] [-0.99987001039916801:1] [-0.99997500062498434:1] [-0.99995000199992001:1] [-0.033382425135002398:1] [-0.015675619186957802:1] [-0.38169425511197658:1] [-0.015724918754586401:1] [-0.98425196850393704:1] [-0.021379438557352599:1] [-0.36761149269614007:1] [-0.026567481402763:1] [-0.98274111675126896:1] [-0.35977859778597782:1] [-0.010456273764258501:1] [-0.98513379583746274:1] [-0.38512869399428018:1] [-0.98274111675126896:1] [-0.98513379583746274:1] [-0.7141645175676552:0.51604330455772851] [-0.97745031808759741:0.70450983788596133] [-0.65854738012419167:0.54497109819476597] [-0.77533287494282899:0.63720764907987937] [-0.84941819964897747:0.67689956635539306] [-0.92827898260770181:0.67563691078655996] [-0.85113897475748723:0.64503159408703659] [-0.99276062820104027:0.63944961405979361] [-0.86183000846665392:0.71812945707971176] [-0.77533287494282899:0.71812945707971176] [-0.99276062820104027:0.71812945707971176] [-0.93461176269899704:0.23271254854402704] [-1.0040785125151468:0.46980754906875877] [-0.90727316369760702:0.31372691609531234] [-0.77432073743338248:0.5501800068576147] [-1.0040785125151468:0.33570803160202622] [-0.88417075699698933:0.33570803160202622] [-0.93461176269899704:0.31372691609531234] [-0.85493727541964792:0.34844733767648928] [-1.0040785125151468:0.34321259191294656] [-0.88417075699698933:0.45404932578982954] [-0.7180531318651806:0.42109889736538231] [-0.87465105846843227:0.13688442026870098] [-1.0726273059488054:0.57075625953684472] [-1.0726273059488054:0.073553007395115375] [-0.87465105846843227:0.13688442026870098] [-1.2206327248630751:0.054585802368002569] [-1.2206327248630751:0.35166570484701376] [-1.0331591025205553:0.11460507433905819] [-1.0331591025205553:0.4923432941989318] [-0.90608930941613297:0.47895047299149257] [-0.8074969759504701:0.56858552449599742] [-1.0040785125151468:0.63264777440015618] [-0.90608930941613297:0.70334126376873785] [-0.86684511132329789:0.56858552449599742] [-0.8074969759504701:0.63264777440015618] [-1.0040785125151468:0.48065122121119275] [-0.87592465252619045:0.70334126376873785] [-1.1954459915800111:0.50764944379048182] [-1.1527833240429706:0.075154717555412781] [-1.1527833240429706:0.070960630391496124] [-1.2547870001827515:0.060167545419372102] [-1.0147412035723191:0.18522344570733798] [-1.1954459915800111:0.060175291513202743] [-1.1527833240429706:0.30729727574318222] [-1.1230422770394033:0.65893228523992675] [-0.91827856406842201:0.50179053297686904] [-1.1230422770394033:0.56202689856393007] [-1.1249446906364229:0.50179053297686904] [-1.1954459915800111:0.65893228523992675] [-1.1249446906364229:0.56202689856393007] [-1.2536297065824238:0.023490575625549348] [-1.1527833240429706:0.008481156311926627] [-1.0371674476314265:0.34844733767648928] [-1.1149643561519291:0.0077035300538079903] [-1.1527833240429706:0.54174025571193407] [-1.1527833240429706:0.019981474755602215] [-1.1705582147981517:0.16805405979675567] [-1.1149643561519291:0.027448435242310165] [-1.1527833240429706:0.4683401605838744] [-1.2206327248630751:0.35166570484701376] [-0.93461176269899704:0.0077035300538079903] [-1.1527833240429706:0.39888854185435585] [-1.2063922605740076:0.34844733767648928] [-1.1649289617979606:0.45082298918191238] [-1.1971344703096469:0.4923432941989318]
+tree_sizes=652 663
+
+Tree=0
+num_leaves=6
+num_cat=0
+split_feature=32 81 3 3 101
+split_gain=91.653 93.9122 73.3031 6.62508 1.03702
+threshold=-0.16900871599712197 -0.15690026364872614 0.30299990039953856 0.18245329712446068 -9.6153246866867727e-05
+decision_type=2 2 2 2 2
+left_child=-1 -2 3 4 -3
+right_child=1 2 -4 -5 -6
+leaf_value=0.13813908174567802 -0.074655276864342313 0.02766498833110656 0.11759575506761305 0.0070654527773098448 0.033839930703077843
+leaf_weight=21 20 80 26 26 453
+leaf_count=21 20 80 26 26 453
+internal_value=0.034877 0.0318856 0.035528 0.0317109 0.0329131
+internal_weight=0 605 585 559 533
+internal_count=626 605 585 559 533
+is_linear=0
+shrinkage=1
+
+
+Tree=1
+num_leaves=6
+num_cat=0
+split_feature=128 81 3 3 109
+split_gain=87.0545 84.0784 64.9575 6.49116 1.14499
+threshold=0.0052495658068062263 -0.15690026364872614 0.30299990039953856 0.18245329712446068 0.0064088584976105369
+decision_type=2 2 2 2 2
+left_child=1 -1 3 4 -3
+right_child=-2 2 -4 -5 -6
+leaf_value=-0.10405570595932659 0.091965247470885525 -0.0015593177949120996 0.075941483262512433 -0.026099025584602111 -0.010920880060376866
+leaf_weight=20 25 489 27 30 35
+leaf_count=20 25 489 27 30 35
+internal_value=0 -0.00325857 0.000211208 -0.00347962 -0.00218461
+internal_weight=0 601 581 554 524
+internal_count=626 601 581 554 524
+is_linear=0
+shrinkage=0.05
+
+
+end of trees
+
+feature_importances:
+element_4=4
+phs_element_1_element_4=2
+element_2_element_11=1
+phs_element_3_element_5=1
+phs_element_4_element_5=1
+phs_element_6_element_11=1
+
+parameters:
+[boosting: gbdt]
+[objective: regression]
+[metric: l1,l2]
+[tree_learner: serial]
+[device_type: cpu]
+[data: ]
+[valid: ]
+[num_iterations: 100]
+[learning_rate: 0.05]
+[num_leaves: 31]
+[num_threads: 0]
+[deterministic: 0]
+[force_col_wise: 0]
+[force_row_wise: 0]
+[histogram_pool_size: -1]
+[max_depth: 5]
+[min_data_in_leaf: 20]
+[min_sum_hessian_in_leaf: 0.001]
+[bagging_fraction: 0.8]
+[pos_bagging_fraction: 1]
+[neg_bagging_fraction: 1]
+[bagging_freq: 5]
+[bagging_seed: 3]
+[feature_fraction: 0.8]
+[feature_fraction_bynode: 1]
+[feature_fraction_seed: 2]
+[extra_trees: 0]
+[extra_seed: 6]
+[early_stopping_round: 20]
+[first_metric_only: 0]
+[max_delta_step: 0]
+[lambda_l1: 0]
+[lambda_l2: 0]
+[linear_lambda: 0]
+[min_gain_to_split: 0]
+[drop_rate: 0.1]
+[max_drop: 50]
+[skip_drop: 0.5]
+[xgboost_dart_mode: 0]
+[uniform_drop: 0]
+[drop_seed: 4]
+[top_rate: 0.2]
+[other_rate: 0.1]
+[min_data_per_group: 100]
+[max_cat_threshold: 32]
+[cat_l2: 10]
+[cat_smooth: 10]
+[max_cat_to_onehot: 4]
+[top_k: 20]
+[monotone_constraints: ]
+[monotone_constraints_method: basic]
+[monotone_penalty: 0]
+[feature_contri: ]
+[forcedsplits_filename: ]
+[refit_decay_rate: 0.9]
+[cegb_tradeoff: 1]
+[cegb_penalty_split: 0]
+[cegb_penalty_feature_lazy: ]
+[cegb_penalty_feature_coupled: ]
+[path_smooth: 0]
+[interaction_constraints: ]
+[verbosity: -1]
+[saved_feature_importance_type: 0]
+[linear_tree: 0]
+[max_bin: 255]
+[max_bin_by_feature: ]
+[min_data_in_bin: 3]
+[bin_construct_sample_cnt: 200000]
+[data_random_seed: 1]
+[is_enable_sparse: 1]
+[enable_bundle: 1]
+[use_missing: 1]
+[zero_as_missing: 0]
+[feature_pre_filter: 1]
+[pre_partition: 0]
+[two_round: 0]
+[header: 0]
+[label_column: ]
+[weight_column: ]
+[group_column: ]
+[ignore_column: ]
+[categorical_feature: ]
+[forcedbins_filename: ]
+[precise_float_parser: 0]
+[objective_seed: 5]
+[num_class: 1]
+[is_unbalance: 0]
+[scale_pos_weight: 1]
+[sigmoid: 1]
+[boost_from_average: 1]
+[reg_sqrt: 0]
+[alpha: 0.9]
+[fair_c: 1]
+[poisson_max_delta_step: 0.7]
+[tweedie_variance_power: 1.5]
+[lambdarank_truncation_level: 30]
+[lambdarank_norm: 1]
+[label_gain: ]
+[eval_at: ]
+[multi_error_top_k: 1]
+[auc_mu_weights: ]
+[num_machines: 1]
+[local_listen_port: 12400]
+[time_out: 120]
+[machine_list_filename: ]
+[machines: ]
+[gpu_platform_id: -1]
+[gpu_device_id: -1]
+[gpu_use_dp: 0]
+[num_gpu: 1]
+
+end of parameters
+
+pandas_categorical:[]
