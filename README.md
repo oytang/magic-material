@@ -31,4 +31,35 @@ Generally, we provided an array of solutions for various tasks in the scope of M
     ├── LICENSE
     └── README.md
 
-## TODO: 双语对照
+## 双语对照
+
+# magic-material
+材料性能预测与逆设计的集成框架。这是为[ai4science黑客马拉松](https://ai4science.io/)的物理科学挑战之一提供的结构化解决方案，由[DeepVerse](deep .tech/en/)、[Bota Bio](www.bota.bio)、[Chemical.AI](https://chemical.ai/)和[Foreseen Biotechnology](www.foreseepharma.com/en-us)组织。
+
+## 概述
+
+一般来说，我们为材料科学领域的各种任务提供了一系列的解决方案。
+
+- **性能预测** -给定某一材料的组成，预测其相应的性能。
+    -我们用广泛的数据驱动模型阐述了我们的解决方案，包括**经典的机器学习模型**(如随机森林和梯度提升)和最新的**深度学习模型**(如Transformer和TabNet)。
+    -此外，我们结合上述两种模型构建了**stacking models**，以更大程度地发挥两种模型的优势。
+    -我们* *处理缺失值 ** !!!!!!!! 待办事项! !
+
+- **逆向设计** -给定一组期望的性能，预测某种材料的组成(通常，在有限的材料设计空间，例如这个玩具合金数据示例中的12元素空间)，即具有最接近于期望性能的一组化学组分。
+    - 我们最初采用的是直接逆建模，假设在组合和属性之间存在一对一的映射，这在物理上不一定是正确的。
+    - 我们使用基于迭代优化的方法开发了一个端到端的逆向设计管道。这种方法最好地模仿了实验室中发生的合理材料设计，科学家能够很好地从以前的实验结果中提取有用的信息，尝试设计更好的材料组成/配方，并测试新材料来验证设计。
+    - * * 生成模型 * *
+
+## 文件结构
+    .
+    ├── data                           # dataset, data analysis & preprocessing notebooks
+    |   └── preprocessed               # preprocessed dataset
+    ├── inverse_design_direct          # plain direct multi-layer perceptron models
+    ├── inverse_design_generative      # conditional generative models
+    ├── inverse_design_iterative       # iterative rational sampling (BO & PSO)
+    ├── property_prediction_DL_NN      # deep learning models (Transformer, TabNet, etc.)
+    ├── property_prediction_ML_tree    # classical machine learning models (random forest, gradient boost, etc.)
+    ├── property_prediction_tree_NN    # stacking models combining tree models with NN models
+    ├── DeepVerse_Challenge_1.ipynb    # example notebook provided by the organizer
+    ├── LICENSE
+    └── README.md
