@@ -2,7 +2,7 @@
 import numpy as np
 import torch
 from torch import nn
-from VAE import VAE_encode, VAE_decode
+from .VAE import VAE_encode, VAE_decode
 from tqdm import tqdm
 
 
