@@ -2,7 +2,7 @@ import torch
 from torch import nn
 device = torch.device("cuda" if torch.cuda. is_available() else "cpu")
 
-model_nn = nn.Sequential(
+model_nn_1 = nn.Sequential(
     nn.Linear(6, 9),
     nn.Softmax(1),
     nn.Linear(9, 16),
@@ -11,7 +11,7 @@ model_nn = nn.Sequential(
     nn.Softmax(1)
 ).to(device).double()
 
-model_nn_clean = nn.Sequential(
+model_nn_2 = nn.Sequential(
     nn.Linear(6,9),
     nn.Softmax(1),
     nn.Linear(9,12),
@@ -23,7 +23,7 @@ criterion = nn.MSELoss()
 loss_hist = []
 R2_hist = []
 
-def train_NN(x, y, max_iter, m=model_nn):
+def train_NN_1(x, y, max_iter, m=model_nn_1):
     optimizer = torch.optim.Adam(m.parameters())
     y_bar = torch.mean(y, 0)
 
@@ -44,7 +44,7 @@ def train_NN(x, y, max_iter, m=model_nn):
     return m, loss_hist, R2_hist
 
 
-def train_NN_clean(x, y, max_iter, m=model_nn_clean):
+def train_NN_2(x, y, max_iter, m=model_nn_2):
     optimizer = torch.optim.Adam(m.parameters())
     y_bar = torch.mean(y, 0)
     
