@@ -11,13 +11,13 @@ device = torch.device("cuda" if torch.cuda. is_available() else "cpu")
 
 class inverse_design_cvae():
 
-    def __init__(self, elements, properties, epoch, target
+    def __init__(self, elements, properties, epoch
                  , elements_len=12, properties_len=6, layer_en=6, layer_de=6, latent_dimension=10,
                  ):
         self.EPOCH = epoch
         self.COMPOSITION = elements_len
         self.PROPERTY = properties_len
-        self.X, self.Y, self.TARGET = elements, properties, target
+        self.X, self.Y = elements, properties
         self.LA_E, self.LA_D, self.LA_L = layer_en, layer_de, latent_dimension
 
         self.model, self.model_encode, self.model_decode = None, None, None
@@ -53,9 +53,9 @@ class inverse_design_cvae():
             optimizer_decoder.step()
         return results, self.model_encode, self.model_decode
 
-    def run_design(self):
+    def run_design(self, target):
         with torch.no_grad():
             exa = np.random.randn(self.LA_L, 1)
-            pre_ = torch.concat([torch.tensor(exa).T, torch.tensor(self.TARGET).reshape(1, -1)], 1)
+            pre_ = torch.concat([torch.tensor(exa).T, torch.tensor(target).reshape(1, -1)], 1)
             res = self.model_decode(pre_.to(device).float()).to("cpu").detach().numpy()
         return res.squeeze()
