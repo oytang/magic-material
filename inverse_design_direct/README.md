@@ -48,3 +48,6 @@ model = nn.Sequential(
     nn.Linear(16,12),
     nn.Softmax(1)
 )
+
+# model structure
+![image](https://user-images.githubusercontent.com/40206861/170153466-a525871b-83c9-41a7-9868-4adc925ea835.png)
