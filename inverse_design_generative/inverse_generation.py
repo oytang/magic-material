@@ -56,6 +56,6 @@ class inverse_design_cvae():
     def run_design(self, target):
         with torch.no_grad():
             exa = np.random.randn(self.LA_L, 1)
-            pre_ = torch.concat([torch.tensor(exa).T, torch.tensor(target).reshape(1, -1)], 1)
+            pre_ = torch.concat([torch.tensor(exa).T.to(device), torch.tensor(target).reshape(1, -1).to(device)], 1)
             res = self.model_decode(pre_.to(device).float()).to("cpu").detach().numpy()
         return res.squeeze()
