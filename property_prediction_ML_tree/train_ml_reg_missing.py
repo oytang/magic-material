@@ -180,7 +180,7 @@ if __name__ =="__main__":
 
 
 	df_results_all_property = pd.concat(df_results_all_model_list, axis=0)
-	df_results_all_property.to_csv('df_results_fill.csv', index=False)
+	df_results_all_property.to_csv('results/df_results_fill.csv', index=False)
 
 
 
