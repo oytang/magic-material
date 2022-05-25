@@ -14,7 +14,7 @@ Generally, we provided an array of solutions for various tasks in the scope of M
 - **Inverse design** - Given a set of desired properties, predict the composition of a certain material (usually, in a limited material design space, such as the 12-element space in this toy alloy data example), that has the cloest set of properties to the desire one.
     - We approched initially with **direct inverse modeling**, assuming an one-to-one mapping between compositions and properties, which is not necessarily true physically.
     - We developed an end-to-end pipeline of **inverse design using iterative optimization-based methods**. This approach best mimics the rational material design happening in wet laboratories, where scientists actively extract useful information from previous experimental results, try to design a better composition/formulation of materials, and test the new materials to validate the design.
-    - **generative model**
+    - Further, in the face of larger data, we use the more general **generation model** as the reverse design method, map the joint vector of materials and properties into a continuous high-dimensional space through CVAE method, and obtain the generation of material formula that meets the substitution conditions
 
 ## File Structure
 
@@ -28,6 +28,7 @@ Generally, we provided an array of solutions for various tasks in the scope of M
     ├── property_prediction_ML_tree    # classical machine learning models (random forest, gradient boost, etc.)
     ├── property_prediction_tree_NN    # stacking models combining tree models with NN models
     ├── DeepVerse_Challenge_1.ipynb    # example notebook provided by the organizer
+    ├── run_inverse_design.ipynb       # an inverse-design demo
     ├── LICENSE
     └── README.md
 
