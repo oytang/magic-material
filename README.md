@@ -1,6 +1,8 @@
+<a href="url"><img src="MagiXterial-logos.jpeg" align="left" height="150" width="150" ></a>
+
 # magic-material
 
-An integrated framework for materials property prediction and inverse design. This is a structured solution for one of the Physical Science Challenges of [ai4science hackathon](https://ai4science.io/), organized by [DeepVerse](deepverse.tech/en/), [Bota Bio](www.bota.bio), [Chemical.AI](https://chemical.ai/) and [Foreseen Biotechnology](www.foreseepharma.com/en-us).
+An integrated framework for materials property prediction and inverse design, provided by team **MagiXterial**. This is a structured solution for one of the Physical Science Challenges of [ai4science hackathon](https://ai4science.io/), organized by [DeepVerse](deepverse.tech/en/), [Bota Bio](www.bota.bio), [Chemical.AI](https://chemical.ai/) and [Foreseen Biotechnology](www.foreseepharma.com/en-us).
 
 ## Overview
 
@@ -69,5 +71,6 @@ Generally, we provided an array of solutions for various tasks in the scope of M
     ├── property_prediction_ML_tree    # 经典机器学习模型（随机森林，梯度提升，等）
     ├── property_prediction_tree_NN    # 结合树状模型和神经网络模型的堆叠模型
     ├── DeepVerse_Challenge_1.ipynb    # 主办方提供的笔记本范例
+    ├── run_inverse_design.ipynb       # 逆向设计模型使用展示
     ├── LICENSE
     └── README.md
