@@ -1,4 +1,4 @@
-<a href="url"><img src="MagiXterial-logos.jpeg" align="left" height="150" width="150" ></a>
+<a href="url"><img src="MagiXterial-logos.jpeg" align="left" height="160" width="160" ></a>
 
 # magic-material
 
