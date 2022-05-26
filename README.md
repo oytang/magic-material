@@ -1,8 +1,16 @@
-<a href="url"><img src="MagiXterial-logos.jpeg" align="left" height="170" width="170" ></a>
-
 # magic-material
 
-An integrated framework for materials property prediction and inverse design, provided by team **MagiXterial**. This is a structured solution for one of the Physical Science Challenges of [ai4science hackathon](https://ai4science.io/), organized by [DeepVerse](deepverse.tech/en/), [Bota Bio](www.bota.bio), [Chemical.AI](https://chemical.ai/) and [Foreseen Biotechnology](www.foreseepharma.com/en-us).
+<a href="url"><img src="MagiXterial-logos.jpeg" align="left" height="130" width="130" ></a>
+
+An integrated framework for materials property prediction and inverse design, provided by team **MagiXterial**. This is a structured solution for one of the Physical Science Challenges of [ai4science hackathon](https://ai4science.io/), organized by [DeepVerse](deepverse.tech/en/), [Bota Bio](www.bota.bio), [Chemical.AI](https://chemical.ai/) and [Foreseen Biotechnology](www.foreseepharma.com/en-us). This is a cleaned Git repository only showing workable codes and removing development-relevant content and commit history. Access to the original Git repository (Private) can be granted upon request.
+
+## Team members
+
+[@Chemino](https://github.com/Chemino)
+[@Mercury1874](https://github.com/1874Mercury)
+[@zzconanc](https://github.com/zzconanc)
+[@shoehangxh](https://github.com/shoehangxh)
+[@RichardYang88](https://github.com/RichardYang88)
 
 ## Overview
 
